@@ -3,6 +3,7 @@
 Capacitated vehicle routing for Indomaret Storesin Jakarta Utara (45 customers, 1 depot), using real road distances from the OpenRouteService API. A discrete Particle Swarm Optimization (PSO) is implemented from scratch, diagnosed, tuned, and benchmarked against simulated annealing, a genetic algorithm, random search and the Clarke-Wright savings heuristic at an equal evaluation budget.
 
 ## Problem
+- Store locations (Indomaret outlets, Jakarta Utara) collected and geocoded manually
 - 45 customers + 1 depot, driving distances from the OpenRouteService `driving-car` matrix (asymmetric)
 - Customer demands are **synthetic**: uniform integers in [10, 49] (seed 42), total demand 1,364
 - Vehicle capacity 100, so at least 14 vehicles are needed
@@ -54,7 +55,7 @@ Interactive Folium maps with road-level geometry were generated for the best tun
 2. Add two secrets in Colab (key icon, enable notebook access):
    - `ORS_API_KEY`: free key from https://openrouteservice.org
    - `carto_API_key`: free key from https://carto.com/basemaps/apikey (only needed for map tiles; the notebook falls back to OpenStreetMap without it)
-3. Provide the location CSV (`LocIDMJakut.csv`) and run all cells.
+3. Place the location CSV (`LocIDMJakut.csv`) in the Colab working directory (`/content`) and run all cells.
 
 ## Repository contents
 - `Vehicle_Routing_Problem_IDM_Jakut.ipynb`: full pipeline (data, ORS matrix, CVRP, PSO, diagnostics, tuning, comparison, maps)
