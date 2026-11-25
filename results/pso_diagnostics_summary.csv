@@ -1,0 +1,6 @@
+run,best_distance_km,final_diversity,first_iter_diversity<5%,unique_positions_final,last_gbest_improvement_iter,stagnant_iters_%,particles_moved_last25%,pbest_improv_last25%,mean_velocity_len,iters_with_capped_particles_%
+1,687.3392599999997,0.0,9,1,14,93.0,0.0,0.0,0.879,0.0
+2,718.3416600000002,0.0,10,1,8,96.0,0.0,0.0,0.7718333333333334,0.0
+3,724.3172999999997,0.0,6,1,7,96.5,0.0,0.0,0.5761666666666667,0.0
+4,728.77168,0.0,11,1,10,95.0,0.0,0.0,0.8991666666666666,0.0
+5,737.3514600000002,0.0,10,1,12,94.0,0.0,0.0,0.9476666666666667,0.0
